@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacia una concepción transdisciplinar de la lectura</title>
+    <style>
+        /* =========================================
+           CONFIGURACIÓN GENERAL
+           ========================================= */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #1a1a1a;
+            text-align: justify;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* =========================================
+           CONTENEDOR PRINCIPAL
+           ========================================= */
+        .contenedor {
+            max-width: 750px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 60px 70px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+        }
+
+        /* =========================================
+           ENCABEZADO / PORTADA
+           ========================================= */
+        .portada {
+            text-align: center;
+            padding: 60px 20px 50px 20px;
+            border-bottom: 3px double #12233F;
+            margin-bottom: 40px;
+        }
+
+        .portada .ornamento-superior {
+            color: #6B1C23;
+            font-size: 16pt;
+            letter-spacing: 10pt;
+            margin-bottom: 30px;
+        }
+
+        .portada h1 {
+            font-size: 20pt;
+            font-weight: bold;
+            color: #12233F;
+            text-transform: uppercase;
+            letter-spacing: 2pt;
+            line-height: 1.3;
+            margin: 0 0 10px 0;
+        }
+
+        .portada .subtitulo-portada {
+            font-size: 13pt;
+            font-style: italic;
+            color: #6B1C23;
+            margin: 15px 0 5px 0;
+        }
+
+        .portada .volumen {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #12233F;
+            text-transform: uppercase;
+            letter-spacing: 4pt;
+            margin: 8px 0 30px 0;
+        }
+
+        .portada .linea-divisoria {
+            width: 40%;
+            margin: 25px auto;
+            border: none;
+            border-top: 1px solid #999;
+        }
+
+        .portada .autor {
+            font-size: 13pt;
+            font-weight: bold;
+            color: #12233F;
+            letter-spacing: 2pt;
+            text-transform: uppercase;
+        }
+
+        .portada .institucion {
+            font-size: 9.5pt;
+            color: #666;
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .portada .ornamento-inferior {
+            color: #6B1C23;
+            font-size: 12pt;
+            letter-spacing: 8pt;
+            margin-top: 30px;
+        }
+
+        /* =========================================
+           TITULARIOS
+           ========================================= */
+        h2.titulo-seccion {
+            font-size: 14pt;
+            text-transform: uppercase;
+            text-align: right;
+            color: #12233F;
+            margin: 45px 0 20px 0;
+            font-weight: bold;
+            letter-spacing: 1pt;
+            border-bottom: 2px solid #6B1C23;
+            padding-bottom: 5pt;
+        }
+
+        h3.subtitulo {
+            font-size: 12pt;
+            color: #6B1C23;
+            margin-top: 20pt;
+            margin-bottom: 10pt;
+            font-weight: bold;
+        }
+
+        /* =========================================
+           PÁRRAFOS
+           ========================================= */
+        p {
+            margin: 0 0 10pt 0;
+            text-indent: 0;
+        }
+
+        p.primera-linea {
+            text-indent: 0;
+        }
+
+        /* =========================================
+           BLOQUES DE CITA
+           ========================================= */
+        blockquote {
+            margin: 15pt 0;
+            padding: 10pt 15pt;
+            border-left: 3pt solid #6B1C23;
+            background-color: #f9f9f9;
+            font-style: italic;
+            color: #333;
+        }
+
+        blockquote cite {
+            display: block;
+            text-align: right;
+            font-style: normal;
+            font-weight: bold;
+            color: #12233F;
+            margin-top: 8pt;
+            font-size: 10pt;
+        }
+
+        /* =========================================
+           BLOQUE ANALÍTICO / DESTACADO
+           ========================================= */
+        .bloque-destacado {
+            margin: 20pt 0;
+            padding: 15pt 18pt;
+            background-color: #fdf5f6;
+            border-left: 3pt solid #6B1C23;
+            border-right: 1px solid #e8d5d7;
+            font-style: italic;
+        }
+
+        .bloque-destacado p {
+            margin: 5pt 0;
+        }
+
+        /* =========================================
+           SEPARADORES
+           ========================================= */
+        .separador {
+            text-align: center;
+            color: #6B1C23;
+            font-size: 14pt;
+            margin: 30px 0;
+            letter-spacing: 8pt;
+        }
+
+        /* =========================================
+           PIE DE PÁGINA
+           ========================================= */
+        .pie-pagina {
+            margin-top: 50px;
+            padding-top: 15px;
+            border-top: 1px solid #ccc;
+            text-align: center;
+            font-size: 9pt;
+            color: #888;
+            font-style: italic;
+        }
+
+        /* =========================================
+           RESPONSIVE
+           ========================================= */
+        @media (max-width: 800px) {
+            .contenedor {
+                margin: 10px;
+                padding: 30px 25px;
+            }
+            .portada h1 {
+                font-size: 16pt;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="contenedor">
+
+    <!-- ========================================== -->
+    <!-- PORTADA                                    -->
+    <!-- ========================================== -->
+    <div class="portada">
+        <div class="ornamento-superior">✦ ✦ ✦</div>
+        <h1>Hacia una concepción transdisciplinar de la lectura</h1>
+        <p class="subtitulo-portada">Hacia una didáctica transdisciplinar de la lectura</p>
+        <p class="volumen">Volumen II</p>
+        <hr class="linea-divisoria">
+        <p class="autor">Víctor Hugo Quintanilla Coro</p>
+        <p class="institucion">Carrera de Literatura · Facultad de Humanidades y Ciencias de la Educación<br>Universidad Mayor de San Andrés</p>
+        <div class="ornamento-inferior">— ✦ —</div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- INTRODUCCIÓN                               -->
+    <!-- ========================================== -->
+    <h2 class="titulo-seccion">Introducción</h2>
+
+    <p>La lectura y su enseñanza, particularmente en relación a la literatura, ha permanecido durante décadas encerrada en los límites de una disciplina. Esta clausura epistemológica produce lectores capaces de identificar figuras retóricas, narradores, periodos históricos y corrientes estéticas, pero es incapaz de percibir las relaciones que conectan el texto con la llamada realidad y sus problemas, especialmente los educativos. Se asume una posición crítica al respecto, desde una perspectiva transdisciplinar. "La transdisciplinariedad comprende, como el prefijo 'trans' lo indica, lo que está, a la vez, entre las disciplinas, a través de las diferentes disciplinas y más allá de toda disciplina" (Nicolescu, 1996, p. 37).</p>
+
+    <p>La lectura es una encrucijada de fronteras y la lectura de literatura, un nudo de convergencias entre la filosofía, la sociología, la educación, la antropología, la ética o la política.</p>
+
+    <p>De ahí que el nivel crítico de la lectura crezca en proporción directa a su capacidad de transitar entre distintos regímenes de saber y de articular diferentes experiencias de vida. Cuanto más transdisciplinar es una lectura, más crítica puede ser, porque la crítica exige desbordar las categorías que cualquier campo de conocimientos impone. Esos límites deben verse como fronteras intelectuales y, a la vez, como el horizonte estrecho de una concepción autorreferencial de la crítica. Se sostiene que leer críticamente no depende de afinar el método de una disciplina, sino de exponer la lectura a otros saberes, especialmente, a la experiencia de quien lee. Para sostener esta tesis, primero se remite a las determinaciones sociales y políticas de la lectura; luego, a sus dimensiones ética, material, simbólica y ficcional; después, al papel del lector en la configuración del sentido y del canon, junto con los cambios que traen consigo la era postliteraria y la lectura a escala mundial.</p>
+
+    <!-- ========================================== -->
+    <!-- MÁS ALLÁ DE LAS FRONTERAS DISCIPLINARES    -->
+    <!-- ========================================== -->
+    <h2 class="titulo-seccion">Más allá de las fronteras disciplinares</h2>
+
+    <p>La lectura disciplinar tiende a considerar la obra literaria como un objeto encerrado en sí mismo y provisto de algún sentido que el lector debería descubrir, para luego enseñar literatura precisamente a través del sentido descubierto. Ese punto de vista asume la existencia de un método correcto a priori, de una suerte de clave hermenéutica que conduce al sentido oculto del texto. La transdisciplinariedad rechaza esa premisa al entender la literatura como una práctica discursiva en permanente tensión y articulación con otros discursos. En consonancia con ello, la teoría literaria contemporánea dejó de buscar una definición sustancial de la literatura para examinar los efectos que los textos producen en diferentes campos (Culler, 2004, pp. 29–31). Esto convierte la lectura en una actividad de permanente interrogación: cada texto plantea problemas que exceden su condición estética y requieren otros saberes para ser comprendidos, aunque sea en alguna medida.</p>
+
+    <p>Enseñar a leer desde una perspectiva transdisciplinar implica, entonces, abandonar la idea de que el texto literario posee un sentido definido únicamente por el uso estético del lenguaje y aislado de las condiciones materiales, históricas y simbólicas que hacen posible esa misma estética. Toda producción cultural surge dentro de un campo de fuerzas sociales donde los agentes disputan la legitimidad de sus prácticas (Bourdieu, 2002, pp. 119–126). Ni la lectura ni la literatura están exentas de esas determinaciones: la primera, porque funciona como un habitus; la segunda, porque es su principal objeto. Una lectura atenta a ellas conduce a examinar las condiciones de producción del texto literario, las instituciones que pueden consagrarlo o no, los capitales simbólicos que lo sostienen y las luchas que determinan su lugar en el canon del campo. La concepción disciplinar de lectura tiende a ignorar esas determinaciones por concentrarse en el análisis interno del texto, algo que despoja a esa práctica de su carácter social constitutivo. La lectura transdisciplinar, en cambio, articula las condiciones contextuales, porque el texto es primero que nada un acontecimiento histórico-social y solo después literatura.</p>
+
+    <p>Esa dialéctica entre literatura y sociedad comporta una didáctica de la lectura que ya no se funda en la transmisión de contenidos dados, sino en el planteamiento de problemas de investigación. Se deja de ofrecer claves de interpretación para plantear, más bien, preguntas que permitan avanzar más allá de las comprensiones que pretenden ser exclusivamente literarias. La lectura crítica surge menos de una sofisticación extrema del habitus lector dentro del propio campo literario que de la capacidad de trascender las limitaciones disciplinarias.</p>
+
+    <p>Ello se debe a que, cuando un lector atiende a un poema o a una novela desde una única disciplina, tiende a confirmar los presupuestos de esa disciplina: encuentra en el texto lo que ya sabía o lo que está anticipadamente prescrito en una serie de marcos teóricos. La relación transdisciplinar de saberes, por el contrario, introduce contradicciones o relaciones de complementariedad que llevan al lector a revisar su propia identidad y su pensamiento. Paul Ricoeur se refirió a ello cuando mostró que la identidad narrativa se construye en la mediación entre la experiencia vivida y la configuración literaria, en un proceso donde el lector refigura su propia comprensión del mundo al apropiarse de los personajes ficticios (Ricoeur, 1999, pp. 227–228). Esa refiguración se vuelve más crítica cuando el lector, un yo condicionado por las certezas de su disciplina, se transforma en variaciones de sí mismo: cuando su "yo" pasa a ser un "otro" que ya no cabe en un marco teórico y que se corresponde, más bien, con saberes que antes ignoraba o encubría.</p>
+
+    <p>Si leer es exponerse a saberes que desacomodan las certezas previas, la enseñanza de la literatura y de su lectura debe reorganizarse. Las unidades temáticas dejarían de ordenarse por periodos históricos, por nacionalidades o por géneros literarios, y los contenidos se estructurarían en torno a problemas de investigación que involucren distintas disciplinas o herramientas de comprensión. El estudio de la metáfora, por ejemplo, debe dejar de ser un ejercicio de retórica para convertirse en una indagación sobre cómo el lenguaje crea una realidad, un mundo, cuya comprensión no se puede reducir a la lingüística, la filosofía, la psicología cognitiva o la teoría literaria. La escritura no se deja encerrar en una temática ni en un campo, pues constituye la condición de posibilidad misma de todo sentido (Derrida, 1998, pp. 7–8). De ahí que la literatura pueda pensarse como una red de significación completamente abierta e inagotable, y que su lectura comparta esa naturaleza.</p>
+
+    <!-- ========================================== -->
+    <!-- EL TEXTO COMO UMBRAL                       -->
+    <!-- ========================================== -->
+    <h2 class="titulo-seccion">El texto como umbral y materialidad de lenguaje</h2>
+
+    <p>En su concepción transdisciplinar, la lectura asume que el texto literario comparte procedimientos, estrategias y efectos con otros discursos que no son literarios. Esa particularidad hizo posible la crítica literaria moderna, y no el supuesto de que la literatura tuviera una identidad estética exclusiva y consustancial. También explica que el ejercicio de esa crítica fuera una de las condiciones para la reorganización y movilización del poder social contra el Estado absolutista (Eagleton, 1999, p. 11). Ese hallazgo muestra que la literatura siempre estuvo imbricada con la política, y que separar ambas dimensiones, como ocurre en cierta crítica literaria actual presupone una concepción de lectura muy empobrecida, meramente autotélica, incapaz de percibir, sobre todo, las funciones educativas que un texto puede cumplir. La transdisciplinariedad enseña a visibilizar esas utilidades, a examinar cómo la literatura subvierte los valores dominantes o cómo construye comunidades imaginadas que gestan protagonismos reales.</p>
+
+    <p>Si la literatura está imbricada con la política y con la educación, leer no puede ser un acto neutral: es también una práctica de responsabilidad ética entre el lector y el texto. Pero esa responsabilidad no se limita a subsumir la literatura en la totalidad de la crítica literaria. Dicha ética reconoce que el lector se enfrenta a una alteridad irreductible, sea cual sea su horizonte de expectativas, individual y, con mayor razón, disciplinar. Por eso una lectura no es crítica solo porque surja de la tensión entre la apropiación del texto (léase su alienación) y el carácter epifánico que trae consigo un poema o una narración. Lo decisivo es lo que el lector hace en ese punto de tensión: encubrir con sus certezas el contenido que se presenta bajo la forma de una estética o dejarse decir por ese mismo contenido. No se trata de analizar el texto, sino de dejar que el texto analice al lector.</p>
+
+    <p>Ahora bien, esa apertura de la lectura hacia otros saberes tampoco significa que el texto literario deba ser reducido a aquello que puede decir sobre la sociedad, la política, la filosofía o cualquier otro campo. La literatura puede ser atendida como una forma de exposición de la materialidad, de la sensibilidad y de la existencia, como una superficie en la que el lenguaje se ofrece antes de ser subordinado a una interpretación. En este sentido, el texto constituye un espacio de excripción, un lugar en el que el discurso permanece expuesto ante sus propios límites y en el que la lectura se sitúa frente al umbral entre el sentido y la materialidad del lenguaje (Nancy, 2003, p. 6). La lectura transdisciplinar debe poder atravesar ese umbral, aunque también debe saber detenerse ante aquello que el lenguaje presenta como acontecimiento corporal. La lectura en voz alta permite comprender esta dimensión: allí lo literario ocurre mediante la voz y el texto adquiere una existencia que se imprime en el silencio.</p>
+
+    <!-- ========================================== -->
+    <!-- FICCIÓN, MITO Y PROTAGONISMO LECTOR        -->
+    <!-- ========================================== -->
+    <h2 class="titulo-seccion">Ficción, mito y protagonismo lector</h2>
+
+    <p>Desde esta apertura hacia la materialidad del lenguaje, la lectura puede desplazarse hacia las formas simbólicas mediante las cuales las comunidades han enfrentado sus miedos originarios y sus interrogaciones sobre la existencia. La literatura, escrita u oral, es parte de la reconstrucción y rearticulación de los mitos, porque estos relatos permiten organizar simbólicamente las tensiones de un mundo de vida y suscitar una comprensión colectiva. Leer transdisciplinariamente supone, en este caso, atender a la cosmovisión que acompaña al texto y reconocer que la imaginación posee una dimensión cultural que excede su consideración estrictamente literaria. El poema o la narración pueden ser comprendidos como constelaciones de símbolos que remiten a las intimaciones objetivas de la realidad (Durand, 2004, p. 44). De este modo, la lectura deja de preguntar únicamente qué significa una imagen en una obra para interrogar qué formas de existencia, de temor o de esperanza encuentran expresión en ella.</p>
+
+    <p>Del mito a la ficción hay un paso corto. Ambos construyen mundos que no pretenden ser un calco del mundo y, justamente por eso, permiten preguntar por él. Una novela o un poema suspenden, mientras dura la lectura, la exigencia de verificación que rige a otros discursos: nadie le pide a un personaje que exista para tomarse en serio lo que su historia pone en juego. Ese gesto abre interrogaciones ontológicas sobre qué cuenta como real, qué como posible y qué como simplemente imaginado, y sobre lo que le ocurre a quien habita por un tiempo un mundo que no es el suyo. Tales interrogaciones no pertenecen a una sola disciplina: las comparten la filosofía, la psicología, la antropología y la propia teoría literaria, sin que ninguna pueda agotarlas. Por eso, desde una mirada transdisciplinar, leer ficción no se reduce a preguntar si lo narrado es verosímil o está bien construido; también interroga qué le ocurre al lector mientras acepta ese otro mundo. Pero esos mundos no están completos de antemano: dependen de quien los lee.</p>
+
+    <p>Esto exige considerar que el sentido de una obra literaria no está dado antes del encuentro con el lector. La teoría de la recepción lo sustenta al entender que la lectura da lugar a la interacción entre el polo artístico y el polo estético, de manera que los espacios de indeterminación del texto convocan la participación del receptor para "completar" el contenido del texto literario (Iser, 1987). Así, la obra aparece como una estructura abierta cuya legitimidad necesita de un lector. Desde esta perspectiva, la lectura crítica se ejerce también al explicitar los vacíos narrativos, las indeterminaciones y aquello que permanece sin decir en un texto, de tal modo que se aporte a la configuración de su sentido.</p>
+
+    <!-- ========================================== -->
+    <!-- CANON, POSTLITERATURA Y LECTURA DISTANTE   -->
+    <!-- ========================================== -->
+    <h2 class="titulo-seccion">Canon, postliteratura y lectura distante</h2>
+
+    <p>Esta participación del lector en la legitimación del texto ayuda a comprender, además, las condiciones bajo las cuales determinadas obras llegan a ocupar un lugar privilegiado en una cultura: son efecto de la mayor y mejor participación del lector en la configuración de su sentido. La relación entre los lectores y los textos literarios es multifacética por definición, y esa multiplicidad se debe principalmente al lector y no al texto. Por ello, el canon al que se refiere Bloom (1994, p. 30) es más un efecto del tipo de lector que del texto en sí mismo. Bloom, entonces, pudo haber caído en un fetichismo de lo estético y de su pretendida autonomía, pues los valores de ambas cualidades dependen de quien llega a leer textos con un determinado horizonte de experiencias en el lenguaje, que no está determinado por un campo de conocimientos. Esta condición de la lectura es resultado de circunstancias históricas y culturales, y no del texto. Las obras son canónicas o no en correspondencia con un devenir histórico-social determinado, al margen del cual los textos no tienen existencia alguna. El lector, en este caso, es un actor de lo transdisciplinar, es decir, de una serie intrincada de condiciones históricas —que no se reducen a ser literarias, antropológicas o políticas— y que son en verdad las que constituyen un canon a su imagen y semejanza.</p>
+
+    <p>La relación entre lectura, literatura y mundo (realidad, contexto o sociedad) se vuelve todavía más compleja cuando cambian las condiciones materiales de recepción de los textos. Si bien es cierto que la literatura fundada en la escritura fue desde siempre parte de la genealogía del humanismo, porque leer amansa o domestica (Sloterdijk, p. 12), conviene precisar que esa función se ejerció mediante textos clasificados por disciplinas, sobre todo a lo largo de la modernidad. Esto equivalía a encerrar la lectura en diferentes campos de conocimientos, con la finalidad de garantizar la reproducción de los mismos.</p>
+
+    <p>Una de las razones por las cuales la lectura aún no puede liberarse de sus sesgos bancarios (los de una enseñanza que deposita saberes en el estudiante) tiene relación directa con esa clasificación de los textos en disciplinas.</p>
+
+    <p>Si, como afirma Peter Sloterdijk, las condiciones de producción y recepción han cambiado y ello ha dado lugar a la era de la postliteratura (Sloterdijk, p. 10), lo que debe comprenderse es la crisis de la concepción meramente disciplinar (léase literaria) de la literatura. Una de las secuelas de esa disciplinariedad es el descentramiento de la lectura como práctica educativa, la cual, además, se desarrolló históricamente como una forma tácita de selección social (Sloterdijk, p. 39). De ahí que la escritura clasificada en disciplinas fuera la cultura que abrió y profundizó brechas entre quienes leían y podían escribir y quienes no lo hacían (Sloterdijk, p. 36). Por ello, la lectura ya no puede pretender responder desde la literatura a la pregunta por la constitución del ser humano; más aún, se trata de liberar esa práctica de ese campo de conocimientos.</p>
+
+    <p>Esto permite precisar que la salida a esa crisis no consiste en multiplicar las interpretaciones especializadas sobre textos literarios. Pensar la lectura de manera transdisciplinar va más allá de las clásicas delimitaciones epistemológicas que han llevado la lectura a su crisis. Se trata, más bien, de leer con finalidades educativas y, en lugar de producir más crítica literaria, producir más literatura, es decir, más condiciones de posibilidad para el desarrollo de la lectura entendida como el acontecimiento de la experiencia de comprender. Esto implica situar la lectura en el umbral o hacerla avanzar hacia su cristalización en escritura. En ambos casos, como se ha visto, el texto puede configurarse como estética, como actualización de símbolos, como construcción ficcional que plantea interrogaciones ontológicas o como huella de un acontecimiento de lectura que obedece a condiciones históricas. Ninguna de estas formas de leer puede pensarse de manera prescriptiva, so pena de anular la concepción transdisciplinar de lectura y reiterar la lectura disciplinar.</p>
+
+    <p>Retomando lo dicho sobre la reorganización de los contenidos, esta concepción modifica la función didáctica de leer. Si el texto es una estructura abierta y el sentido se produce por la interacción entre la obra y el lector, enseñar a leer no puede consistir en proporcionar anticipadamente una interpretación que los potenciales lectores deban reconocer o aceptar. La enseñanza de la lectura debe constituirse en una práctica de investigación donde las preguntas sobre un texto vayan en diferentes direcciones y movilicen herramientas conceptuales, según los problemas planteados. La respuesta a esa lectura, además, no tiene por qué adoptar la forma del comentario crítico: también puede ser escritura, es decir, más literatura. El lector asume la responsabilidad de construir una lectura que pueda dar cuenta de las relaciones descubiertas. La transdisciplinariedad adquiere así una dimensión pedagógica concreta: reorganiza la relación con el saber porque desplaza el centro de la enseñanza desde la transmisión de respuestas disciplinares hacia la construcción de problemas ignorados o negados dentro de los límites imaginados por los currículos de enseñanza de literatura.</p>
+
+    <p>Esta perspectiva permite también redimensionar la escala desde la cual se lee literatura. Con cierto afán nacionalista, pero también disciplinario, gran parte de la crítica se ha concentrado en interpretar los textos únicamente en y desde su contexto inmediato, de modo que los procesos históricos y culturales de mayor amplitud quedan relegados. Franco Moretti describe esa práctica como "un ejercicio teológico –un tratamiento muy solemne de unos cuantos textos que se toman muy en serio–, mientras que lo que realmente necesitamos es un pequeño pacto con el diablo: sabemos leer textos, ahora aprendamos cómo no leerlos" (2000, p. 67). Frente a ello propone la lectura distante, que genera otras condiciones de conocimiento y permite atender a unidades mucho menores o mucho mayores que el texto: recursos, temas, tropos; o géneros y sistemas (Moretti, 2000, p. 68). Esta lectura no se basa en la lectura directa del texto ni en la falsa pretensión de que todo lo no leído se resolverá simplemente intentando leer cada vez más y mejor.</p>
+
+    <p>Todavía siguiendo a Moretti, se trata de articular y sintetizar las investigaciones realizadas por otros especialistas en literaturas nacionales o locales con el fin de visibilizar la literatura mundial: la infinidad de textos no leídos. Esto no implica pensar esa literatura como un objeto, sino más bien como un problema que necesita otra forma de leer: reconocer asimetrías, hibridaciones y disonancias morfológicas que pueden permanecer invisibles cuando la literatura nacional se examina exclusivamente desde sus propias limitaciones textuales. De este modo, la crítica de la lectura anclada en el nacionalismo lleva incluso a revisar lo que se entiende por contexto.</p>
+
+    <p>Contextualizar la lectura de un texto no significa limitarla al espacio histórico inmediato en el que fue producida. Las formas literarias, en particular, son parte de relaciones más amplias que atraviesan culturas, sistemas de circulación y estructuras de poder. La lectura distante forma parte de la mirada transdisciplinar porque articula la proximidad, la del nacionalismo disciplinar, con la distancia: permite que el acontecimiento concreto de la lectura reconozca determinaciones e influencias que exceden los límites de una crítica literaria circunscrita a su ámbito nacional o periférico. Para la didáctica que configura la transdisciplinariedad, esto significa que el estudiante no solo lee un texto, sino que aprende a situarlo en una red de relaciones más amplia que el aula y su propio contexto.</p>
+
+    <!-- ========================================== -->
+    <!-- HACIA UNA DIDÁCTICA TRANSDISCIPLINAR       -->
+    <!-- ========================================== -->
+    <h2 class="titulo-seccion">Hacia una didáctica transdisciplinar de la lectura</h2>
+
+    <p>Esta amplificación permite comprender mejor la concepción de lectura que se ha venido delineando. Leer en perspectiva transdisciplinar significa aceptar, en lo fundamental, que ningún saber posee por sí mismo todas las herramientas para interrogar la complejidad de un texto y que ninguna interpretación puede clausurar aquello que una obra hace posible pensar. La lectura atraviesa la materialidad del lenguaje, las formas simbólicas, la experiencia del lector, las disputas por la legitimación cultural, los problemas de la ficción, las transformaciones de los medios y las relaciones históricas que sitúan una obra dentro de un sistema más amplio. Cada desplazamiento modifica la pregunta inicial y lleva a revisar y corregir las certezas desde las cuales se comenzó a leer.</p>
+
+    <p>Por ello, y de manera semejante a la hermenéutica, la transdisciplinariedad no prescribe una técnica o metodología para interpretar literatura; tampoco se reduce, como ya se señaló, a una suma de disciplinas aplicadas sucesivamente sobre un mismo texto o sobre textos diferentes. Remite a una relación entre lectura y texto que, por definición, desborda cualquier delimitación epistemológica disciplinar. Es decir, no se trata de seguir legitimando la lectura dentro y desde determinados campos de conocimientos, ni de deslindar las lecturas especializadas de las que no lo serían. En el caso de la crítica literaria, esa demarcación carece de sentido, pues la lectura no busca tanto a la crítica como a la literatura misma. En países como Bolivia, esto se advierte con claridad incluso en la formación de maestros de Lenguaje, Comunicación y Literatura, donde la crítica especializada ejerce poca o ninguna influencia. La literatura, en cambio, mantiene abiertas sus posibilidades de significación, y eso no se debe a que tenga una adscripción disciplinar.</p>
+
+    <p>Su lectura es una práctica dialógica, pues implica el encuentro de dos horizontes con historias muy diferentes, el del texto y el del lector; recursiva, ya que el texto produce al lector y el lector al texto; fractal, porque en un texto se simboliza el sinfín de condiciones de posibilidad que lo han hecho posible, al igual que al lector; y relacional, pues leer, e incluso no hacerlo, es parte de un devenir multidireccional, inexplicable desde un único punto de vista, mucho menos si ese punto de vista se arroga el único derecho de leer bien y de prescribir sus interpretaciones. Ni la lectura ni el texto están destinados a confirmar conocimientos previamente adquiridos. Leer implica exponerse a aquello que todavía no se comprende y permitir que esa falta de comprensión origine preguntas.</p>
+
+    <!-- ========================================== -->
+    <!-- EL UMBRAL DE LA EXPERIENCIA                -->
+    <!-- ========================================== -->
+    <h2 class="titulo-seccion">El umbral de la experiencia</h2>
+
+    <p>Desde esta perspectiva, la didáctica transdisciplinar de la lectura tiene una doble exigencia. Por una parte, debe preservar la singularidad estética y material del texto, de modo que la literatura no desaparezca bajo los discursos "críticos" que se utilizan para interpretarla. Por otra, debe impedir que esa singularidad se convierta en una frontera que aísla al texto de los problemas educativos y sociales que lo atraviesan. Ambos polos sitúan la lectura en un umbral donde se suscita lo que se denomina experiencia, un acontecimiento subjetivo irreductible a cualquier red conceptual, algo que le ocurre a un lector (Larrosa, 2003, pp. 19–20).</p>
+
+    <p>En última instancia, se trata de poner de relieve la dimensión más invisibilizada de la lectura: su carácter de experiencia, que ocurre mucho menos dentro de las disciplinas académicas y las materias "educativas" y mucho más fuera de ellas, en el devenir de la vida. Ahí es donde un texto convoca, interrumpe, incomoda y lleva a mirarse como en un espejo, a configurar esa identidad narrativa de la que habló Ricoeur: "La mediación narrativa subraya (...) que una de las características del conocimiento de uno mismo consiste en ser una interpretación de sí" (1999, p. 227).</p>
+
+    <p>Dentro de las disciplinas, se insiste, eso no llega a ocurrir o ocurre de manera desnaturalizada, con arreglo a una serie de reduccionismos metodológicos (idea principal, figuras literarias o interpretaciones temáticas), lo cual tiende a clausurar la posibilidad misma de que algo esté ocurriendo en la subjetividad de un lector. La escuela termina evaluando lo que la lectura produce dentro de su marco curricular, cuando lo decisivo ocurre fuera de él, en la existencia del lector, allí donde ninguna disciplina puede llegar con su pretendida luz. En este sentido, la lectura de literatura no debería tener el fin de producir lectores profesionales, sino lectores expuestos a sí mismos: sujetos a los que les ocurre algo y que ya no son los mismos después de leer.</p>
+
+    <!-- ========================================== -->
+    <!-- CONCLUSIÓN                                 -->
+    <!-- ========================================== -->
+    <h2 class="titulo-seccion">Conclusión</h2>
+
+    <p>Una evaluación transdisciplinar se pregunta, entonces, por las condiciones de posibilidad de aquella experiencia: ¿qué estrategias institucionales permiten que leer deje de ser una obligación curricular para ser un acontecimiento subjetivo? No se trata de medir el rendimiento lector, sino de valorar si la escuela y la política pública crean o clausuran el umbral donde esa experiencia ocurre. Un desplazamiento semejante afecta la figura del mediador. Ni el docente de literatura ni el promotor de lectura son guardianes de ningún sentido considerado correcto; pueden concebirse más bien como arquitectos de umbrales o de experiencias. Su tarea no es explicar el texto, sino plantear preguntas y sostenerlas, de modo que el texto se abra o se cierre según las respuestas de los lectores y no por la fuerza de los marcos teóricos.</p>
+
+    <p>Por último, es preciso dejar de concebir la lectura como una política sectorial que encierra la práctica en las materias de lenguaje o en la disciplina de la literatura (léase crítica literaria clásica). Hacerlo no haría más que seguir reproduciendo la brecha que Sloterdijk denuncia entre quienes leen y escriben y quienes no lo hacen o no pueden hacerlo. Pero la concepción transdisciplinar de la lectura no busca salvar a la literatura de su crisis postliteraria. A través de ella importa salvar la posibilidad misma de la experiencia lectora en una época que tiende a hacerla cada vez más difícil. No es cuestión de leer más, sino de dejar que, aunque sea por una sola vez, un texto nos rescate del paso del tiempo y nos devuelva a nosotros mismos.</p>
+
+    <!-- ========================================== -->
+    <!-- PIE DE PÁGINA                              -->
+    <!-- ========================================== -->
+    <div class="pie-pagina">
+        <p>Entre Palabras. Revista de Educación en el lenguaje y la literatura, No. 1, Noviembre 2026.<br>
+        Carrera de Literatura · Facultad de Humanidades y Ciencias de la Educación · Universidad Mayor de San Andrés</p>
+    </div>
+
+</div>
+
+</body>
+</html>
